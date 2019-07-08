@@ -6,7 +6,7 @@ example: extract the text from a specific html tag.
 
 `curl http://some.web.site | awk -F \> '{print$5}' | ...`
 
-uses each > in a html tag as a separator. If you needed to get to a specific <h3> tag the info for '{print$5}' would return something like
+uses each > in a html tag as a separator. If you needed to get to a specific `<h3>` tag the info for `'{print$5}'` would return something like
 
 `blah blah blah</h3`
 
