@@ -8,4 +8,4 @@
 
 `s/\n/<whatever>/g`
 
-to replace everything. Besure to type `gg` to get to the beginning of the file prior to running these cmds.
+to replace everything. Be sure to type `gg` to get to the beginning of the file prior to running these cmds.
