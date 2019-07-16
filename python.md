@@ -7,6 +7,6 @@ m ='some_string'
 n = '' # an integer
 new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 
-# infinite decsent AES. n must be a divisor of len(m).
+# infinite decsent AES. Wierd things happen if n is not a divisor of len(m).
 
 ```
