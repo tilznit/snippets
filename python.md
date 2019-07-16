@@ -1,5 +1,5 @@
 # python
-### change a string to a list of integers of n length
+### change a string to a list of integers of _n_ length
 
 
 ```python
