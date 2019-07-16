@@ -1,4 +1,4 @@
-# Python
+# python
 ### change a string to a list of integers of n length
 
 
@@ -7,6 +7,6 @@ m ='some_string'
 n = '' # an integer
 new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 
-# infinite decsent AES
+# infinite decsent AES. n must be a divisor of len(m).
 
 ```
