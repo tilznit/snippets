@@ -7,6 +7,6 @@ m ='some_string' # was an int
 n = '' # an integer
 new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 
-# Useful for iterating over a str that was an int. Wierd things happen if n is not a divisor of len(m).
+# Useful for iterating over a str that was an int. Weird things happen if n is not a divisor of len(m).
 
 ```
