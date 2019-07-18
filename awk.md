@@ -12,4 +12,4 @@ uses each > in a html tag as a separator. If you needed to get to a specific `<h
 
 use something like
 
-`sed 's/...$//` to nix the trailing chars and return `blah blah blah`
+`sed 's/...$//` to nix the trailing chars and return `blah blah blah` and pass it into a variable, or whatever you need to do with the info.
