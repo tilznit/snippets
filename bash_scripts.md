@@ -18,6 +18,6 @@ Lists only `some_logs_13.gz` to `some_logs_26.gz`. Pipe that into whatever to do
 
 `grep -a [a-f0-9]\{32\}`
 
-Pipe output from things like `strings` here to finds hashes. The above will work for all hashes that are 32 characters or greater (md5, sha256, etc). Not perfect; will catch any string of lowercase letters and/or numbers greater than or equal to 32 characters. Adapt as needed. To find sha256 you could do
+Pipe output from things like `strings` here to finds hashes. The above will work for all hashes that are 32 characters or greater (md5, sha256, etc). Not perfect; will catch any string that matches the pattern, not just hashes. Adapt as needed. To find sha256 you could do
 
 `grep -a [a-f0-9]\{64\}`
