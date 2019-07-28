@@ -14,7 +14,7 @@ use something like `... | sed 's/ .*$//'` to strip the extraneous info from the 
 
 Lists only `some_logs_13.gz` to `some_logs_26.gz`. Pipe that into whatever to do whatever.
 
-### find hashes from output
+### find hashes (hex) from output
 
 `grep -a [a-f0-9]\{32\}`
 
