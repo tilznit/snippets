@@ -12,6 +12,15 @@ apt-get install upgrade
 apt install kali-linux-*    # whichever [metapackage](https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------) you need
 ```
 
+### Useful
+
+```
+docker ps -a  # view all containers
+docker stop <container_id>  # stop the container
+docker container prune  # remove all stopped containers
+docker rm <CONTAINER ID or NAME>  # rm specific container
+```
+
 Sources:
 [https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------](https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------)
 [https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb](https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb)
