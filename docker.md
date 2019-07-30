@@ -16,6 +16,7 @@ apt install kali-linux-*    # whichever metapackage you need
 
 ```
 docker run -v ~/somedir:/somedir -t -i kalilinux/kali-linux-docker /bin/bash  # folder sync to ~/somedir to preserve data
+docker run -ti <container_name> /bin/bash   # After you've named a container, run it.
 docker ps -a  # view all containers
 docker stop <container_id>  # stop the container
 docker container prune  # remove all stopped containers
