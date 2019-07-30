@@ -9,7 +9,7 @@ docker run -t -i kalilinux/kali-linux-docker /bin/bash
 apt-get install update
 apt-get install upgrade
 
-apt install kali-linux-*    # whichever [metapackage](https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------) you need
+apt install kali-linux-*    # whichever metapackage you need
 ```
 
 ### Useful
