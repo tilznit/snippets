@@ -1,6 +1,6 @@
 ### Quick and easy kali docker install.
 
-Install docker for mac os
+[Install docker](https://docs.docker.com/v17.12/docker-for-mac/install/#download-docker-for-mac) (Get stable) for mac os
 
 ```
 docker pull kalilinux/kali-linux-docker
