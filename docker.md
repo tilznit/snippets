@@ -25,6 +25,9 @@ docker rm <CONTAINER ID or NAME>  # rm specific container
 ### Sources
 
 [https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------](https://www.kali.org/news/kali-linux-metapackages/?source=post_page---------------------------)
+
 [https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb](https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb)
+
 [https://www.kali.org/news/official-kali-linux-docker-images/](https://www.kali.org/news/official-kali-linux-docker-images/)
+
 [https://redflagsecurity.net/2019/03/31/up-and-running-with-kali-on-docker/](https://redflagsecurity.net/2019/03/31/up-and-running-with-kali-on-docker/)
