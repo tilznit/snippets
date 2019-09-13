@@ -17,7 +17,7 @@ Invoke-WebRequest -Uri <target uri> -Method Get -Outfile <whatevs>.ps1 #IWR
 powershell IEX(New-Object Net.Webclient).downloadString("<target uri>") #Invoke-Expression
 ```
 
-"which" *nix equivalent, i.e. it gives *nix-style output.
-```
+"which" nix-style output.
+```powershell
 Get-Command <your command> | Select-Object -ExpandProperty Definition
 ```
