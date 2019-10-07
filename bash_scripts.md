@@ -32,3 +32,16 @@ or if no `-e`
 
 ### do things to entires in IPs.txt
 `for ip in `cat ips.txt`; do md5sum $ip; done >> something.txt`
+
+### ippsec's scanner
+```bash
+#!/bin/bash
+# by Ippsec https://www.youtube.com/watch?v=kE36IGAU5rg
+
+for i in $(seq 2 225); do
+    ping -c 1 -W 1 172.20.0.$i 1>/dev/null 2>&1
+    if [[ $? -eq 0 ]];  then
+          echo "172.20.0.$i - Online"
+    fi
+done
+```
