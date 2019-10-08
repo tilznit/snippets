@@ -45,3 +45,8 @@ for i in $(seq 2 225); do
     fi
 done
 ```
+### grep for a string recursively in a dir
+```bash
+grep -r --include "*.h" "get_return_address"
+# --include "*.h" --> search files ending in .h
+```
