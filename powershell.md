@@ -24,5 +24,6 @@ Get-Command <your command> | Select-Object -ExpandProperty Definition
 
 "grep"-like with x number of lines before or after.
 ```powershell
-<whatever cmd> | Select-String -Pattern "whatevs" -Context 2,4
+<some_cmd> | Select-String -Pattern "whatever" -Context 2,4
+# print 2 lines before "whatever" and 4 lines after "whatever" (including "whatever"
 ```
