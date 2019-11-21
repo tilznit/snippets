@@ -27,3 +27,8 @@ Get-Command <your command> | Select-Object -ExpandProperty Definition
 <some_cmd> | Select-String -Pattern "whatever" -Context 2,4
 # print 2 lines before "whatever" and 4 lines after "whatever" (including "whatever")
 ```
+
+sort uniq
+```powershell
+Get-Content file.txt | Sort-Object -unique
+```
