@@ -10,20 +10,19 @@ new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 # Useful for iterating over a str that was an int. Weird things happen if len(m) mod n != 0.
 
 ```
-### diff-ing tool. nice for stuff like .jpgs
+### diff tool. nice for diffing files in ctfs
 
 ```python
 a = open("filename", "r").read()
 b = open("filename", "r").read()
 
-x = y = []
+x = []
 
 for i,j in zip(a, b):
     if i != j:
         x.append(i)
-        #y.append(j)
         
-print x[::2]
+print x
 
 #prints a list of differences. pipe output into sed to prettify
 
