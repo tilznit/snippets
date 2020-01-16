@@ -23,4 +23,5 @@ for i,j in zip(a, b):
         x.append(i)
         #y.append(j)
         
-print x[::2]```
+print x[::2]
+```
