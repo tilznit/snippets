@@ -24,4 +24,7 @@ for i,j in zip(a, b):
         #y.append(j)
         
 print x[::2]
+
+#prints a list of differences. pipe output into sed to prettify
+
 ```
