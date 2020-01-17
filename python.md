@@ -10,7 +10,7 @@ new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 # Useful for iterating over a str that was an int. Weird things happen if len(m) mod n != 0.
 
 ```
-### diff tool. nice for diffing files in ctfs
+### diff tool... nice for diffing files of the same type in ctfs
 
 ```python
 a = open("filename", "r").read()
@@ -25,6 +25,6 @@ for i,j in zip(a, b):
         
 print x
 
-#prints a string of differences. pipe output into sed to prettify if x is a list.
+# Prints a string of differences. Pipe the output into sed to prettify if x is a list. Output may be a flag...
 
 ```
