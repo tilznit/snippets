@@ -16,14 +16,15 @@ new_list = [int(m[i:i+n]) for i in range (0,len(m),n)]
 a = open("filename", "r").read()
 b = open("filename", "r").read()
 
-x = []
+x = ''
 
 for i,j in zip(a, b):
     if i != j:
-        x.append(i)
+        #x.append(i) if x needs to be a list
+        x += i
         
 print x
 
-#prints a list of differences. pipe output into sed to prettify
+#prints a string of differences. pipe output into sed to prettify if x is a list.
 
 ```
