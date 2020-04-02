@@ -32,3 +32,7 @@ sort uniq
 ```powershell
 Get-Content file.txt | Sort-Object -unique
 ```
+Find a file recursively
+```powershell
+Get-ChildItem -Path V:\Myfolder -Filter CopyForbuild.bat -Recurse -ErrorAction SilentlyContinue -Force
+```
