@@ -34,5 +34,5 @@ Get-Content file.txt | Sort-Object -unique
 ```
 Find a file recursively
 ```powershell
-Get-ChildItem -Path V:\Myfolder -Filter CopyForbuild.bat -Recurse -ErrorAction SilentlyContinue -Force
+Get-ChildItem -Path C:\ -Filter <file_name> -Recurse -ErrorAction SilentlyContinue -Force
 ```
