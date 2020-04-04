@@ -34,5 +34,5 @@ Get-Content file.txt | Sort-Object -unique
 ```
 Find a file recursively
 ```powershell
-Get-ChildItem -Path C:\ -Filter <file_name> -Recurse -ErrorAction SilentlyContinue -Force
+gci -recurse . | select fullname
 ```
