@@ -66,3 +66,8 @@ for i in $(seq 1 255); do echo "10.10.$i.1-255"; done | tr "\n" ","
 ```bash
 sudo mount -t cifs -o "sec=krb5,cruid=$UID,user=Administrateur,domain=http://FOO.BAR" //AD1.FOO.BAR/C$ /mnt/test
 ```
+### tar and untar a directory
+```bash
+tar -zcvf archive.tar.gz directory/;
+tar -zxvf archive.tar.gz
+```
