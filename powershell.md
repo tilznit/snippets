@@ -36,3 +36,9 @@ Find a file recursively
 ```powershell
 gci -recurse . | select fullname
 ```
+Find a string within a file recursively
+```powershell
+ls -recurse | Select-String "google" | Select Path, LineNumber | Format-List
+#alternatively
+ls c:\temp\searchfolder -recurse | Select-String "google" | Select Path, LineNumber | Format-List
+```
