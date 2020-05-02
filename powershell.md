@@ -42,3 +42,7 @@ ls -recurse | Select-String "google" | Select Path, LineNumber | Format-List
 #alternatively
 ls c:\temp\searchfolder -recurse | Select-String "google" | Select Path, LineNumber | Format-List
 ```
+Get FQDN
+```powershell
+[System.Net.Dns]::GetHostByName($env:computerName)
+```
