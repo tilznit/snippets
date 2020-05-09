@@ -1,5 +1,0 @@
-### grep-like exclude
-
-`DOS
-netstat -ano | findstr /v "10.10.14.162"
-`
