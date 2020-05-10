@@ -35,7 +35,7 @@ Get-Content file.txt | Sort-Object -unique
 ```
 Find a file recursively
 ```powershell
-gci -recurse . | select fullname
+gci -Path V:\Myfolder -Filter filename.ext -Recurse -ErrorAction SilentlyContinue -Force
 ```
 Find a string within a file recursively
 ```powershell
