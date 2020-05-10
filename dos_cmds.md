@@ -4,5 +4,5 @@
 
 ### edit text files in the Windows command prompt
 
-`copy con c:\file.txt)
+`copy con c:\file.txt  
 #Then enter the text you want to put in the file.`
