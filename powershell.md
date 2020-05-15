@@ -47,3 +47,7 @@ Get FQDN
 ```powershell
 [System.Net.Dns]::GetHostByName($env:computerName)
 ```
+Search for hidden files in a dir
+```powershell
+gci -recurse -Hidden -ErrorAction SilentlyContinue
+```
