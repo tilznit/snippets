@@ -51,3 +51,7 @@ Search for hidden files in a dir
 ```powershell
 gci -recurse -Hidden -ErrorAction SilentlyContinue
 ```
+copy files of one type from a share to your local machine, recursively
+```powershell
+ gci z:\ -Recurse -Filter *.xml | Copy -Destination C:\path\to\dir
+ ```
