@@ -55,3 +55,7 @@ copy files of one type from a share to your local machine, recursively
 ```powershell
  gci z:\ -Recurse -Filter *.xml | Copy -Destination C:\path\to\dir
  ```
+wc -c equivalent
+```powershell
+echo "hash" | Measure-Object -Character
+```
