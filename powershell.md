@@ -63,3 +63,7 @@ search current dir recursively for alternate data streams
 ```powershell
 Get-ChildItem -recurse | ForEach { Get-Item $_.FullName -stream * } | Where stream -ne ':$DATA'
 ```
+get data from ADS's found with the above cmd
+```powershell
+Get-Content -Path '.\Debug Mode filename.ext' -stream stream-name
+```
