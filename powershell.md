@@ -59,3 +59,7 @@ wc -c equivalent
 ```powershell
 echo "hash" | Measure-Object -Character
 ```
+search current dir recursively for alternate data streams
+```powershell
+Get-ChildItem -recurse | ForEach { Get-Item $_.FullName -stream * } | Where stream -ne ':$DATA'
+```
