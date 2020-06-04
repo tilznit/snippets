@@ -19,8 +19,7 @@ use something like
 ```bash
 awk ' {print;} NR % 2 == 0 { print "sometext"; }' inputfile
 
-# inputfile is file with tlines you want to insert "sometext" into
-#output:
+# inputfile is file with lines you want to insert "sometext" into
 
 line1
 line2
