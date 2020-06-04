@@ -13,3 +13,20 @@ uses each > in a html tag as a separator. If you needed to get to a specific `<h
 use something like
 
 `sed 's/...$//` to nix the trailing chars and return `blah blah blah` and pass it into a variable, or whatever you need to do with the info.
+
+### Insert a string every N rows in a file
+
+```bash
+awk ' {print;} NR % 2 == 0 { print "sometext"; }' inputfile
+
+# inputfile is file with tlines you want to insert "sometext" into
+#output:
+
+line1
+line2
+sometext
+line3
+line4
+sometext
+...
+```
