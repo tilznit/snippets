@@ -82,4 +82,10 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 CTRL-z
 bg
 stty raw -echo
-fg```
+fg
+```
+
+### Find files in a directory
+```bash
+find . -ls -type f
+```
