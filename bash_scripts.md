@@ -85,7 +85,7 @@ stty raw -echo
 fg
 ```
 
-### Find files in a directory
+### Find files recursively in a directory
 ```bash
 find . -ls -type f
 ```
