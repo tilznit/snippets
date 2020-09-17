@@ -89,3 +89,8 @@ fg
 ```bash
 find . -ls -type f
 ```
+
+### nc port scanner only show success and banner (if present)
+```bash
+echo "" | nc -nvw3 172.16.1.20 20-4000 2>&1 | grep -A 1 succeeded
+```
