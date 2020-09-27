@@ -14,6 +14,17 @@ use something like
 
 `sed 's/...$//` to nix the trailing chars and return `blah blah blah` and pass it into a variable, or whatever you need to do with the info.
 
+also handy for quicly getting port numbers from nmap output:
+
+```
+bash
+cat alltcp.nmap | grep open | awk -F/ '{print$1}'
+
+21
+22
+80
+```
+
 ### Insert a string every N rows in a file
 
 ```bash
