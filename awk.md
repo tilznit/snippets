@@ -16,8 +16,7 @@ use something like
 
 also handy for quicly getting port numbers from nmap output:
 
-```
-bash
+```bash
 cat alltcp.nmap | grep open | awk -F/ '{print$1}'
 
 21
