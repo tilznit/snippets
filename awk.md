@@ -17,11 +17,9 @@ use something like
 also handy for quicly getting port numbers from nmap output:
 
 ```bash
-cat alltcp.nmap | grep open | awk -F/ '{print$1}'
+cat alltcp.nmap | grep open | awk -F/ '{print$1}' ORS=','
 
-21
-22
-80
+21,22,80,
 ```
 
 ### Insert a string every N rows in a file
