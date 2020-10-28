@@ -67,3 +67,7 @@ get data from ADS's found with the above cmd
 ```powershell
 Get-Content -Path '.\Debug Mode filename.ext' -stream stream-name
 ```
+port scanner
+```powershell
+1..65535 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("172.16.2.5",$_)) "Port $_ is open" } 2>$null
+```
