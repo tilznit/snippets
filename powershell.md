@@ -71,3 +71,7 @@ port scanner
 ```powershell
 1..65535 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("172.16.2.5",$_)) "Port $_ is open" } 2>$null
 ```
+ping sweeper
+```
+1..255 | % {echo "172.16.2.$_"; ping -n 1 -w 100 172.16.2.$_ | select-string ttl}
+```
