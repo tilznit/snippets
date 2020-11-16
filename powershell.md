@@ -75,3 +75,7 @@ ping sweeper
 ```
 1..255 | % {echo "172.16.2.$_"; ping -n 1 -w 100 172.16.2.$_ | select-string ttl}
 ```
+exfil by clipboard... when all else fails.
+```powershell
+type passwords.txt | Set-Clipboard
+```
