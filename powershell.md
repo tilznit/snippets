@@ -79,3 +79,8 @@ exfil by clipboard... when all else fails.
 ```powershell
 type passwords.txt | Set-Clipboard
 ```
+Command history for the local machine
+```powershell
+(Get-PSReadlineOption).HistorySavePath
+#gives file location; run type on the file to see the contents.
+```
