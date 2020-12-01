@@ -94,3 +94,7 @@ find . -ls -type f
 ```bash
 echo "" | nc -nvw3 172.16.1.20 20-4000 2>&1 | grep -A 1 succeeded
 ```
+### find SUIDs
+```bash
+find / -perm -u=s -type f 2>/dev/null
+```
