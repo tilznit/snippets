@@ -102,3 +102,7 @@ echo "" | nc -nvw3 172.16.1.20 20-4000 2>&1 | grep -A 1 succeeded
 ```bash
 find / -perm -u=s -type f 2>/dev/null
 ```
+### easy parse through a large file with just one line; ctf-y
+```bash
+cat eBQRhHvx | tr " " "\n" | sort | uniq | less
+```
