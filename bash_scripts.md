@@ -1,5 +1,9 @@
 # bash
 
+### find SUID & SGID executables
+
+`find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null`
+
 ### diff a file hash with its published value
 
 `diff <(shasum -a 256 /path/to/file.ext) <(echo "published_sha256_value")`
