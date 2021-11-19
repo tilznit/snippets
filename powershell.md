@@ -73,7 +73,7 @@ port scanner
 ```
 ping sweeper
 ```
-1..255 | % {echo "172.16.2.$_"; ping -n 1 -w 100 172.16.2.$_ | select-string ttl}
+1..255 | % {ping -n 1 -w 100 172.16.2.$_ | select-string ttl}
 ```
 exfil by clipboard... when all else fails.
 ```powershell
