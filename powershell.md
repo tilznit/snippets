@@ -84,3 +84,8 @@ Command history for the local machine
 (Get-PSReadlineOption).HistorySavePath
 #gives file location; run type on the file to see the contents.
 ```
+Look for a file & silently continue errors
+```powershell
+$filename='file.ext'
+Get-ChildItem -Path c:\ -Filter $filename -Recurse -ErrorAction SilentlyContinue | %{$_.FullName}
+```
